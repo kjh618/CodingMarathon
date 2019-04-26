@@ -1,9 +1,0 @@
-Motorcycle Helmet (Level 1)
-Damage Reduction: 30%
----
-Military Helmet (Level 2)
-Damage Reduction: 40%
----
-Spetsnaz Helmet (Level 3)
-Damage Reduction: 55%
----
