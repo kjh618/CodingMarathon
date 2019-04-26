@@ -1,0 +1,9 @@
+Police Vest (Level 1)
+Damage Reduction: 30%
+---
+Police Vest (Level 2)
+Damage Reduction: 40%
+---
+Military Vest (Level 3)
+Damage Reduction: 55%
+---
