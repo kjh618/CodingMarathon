@@ -2,6 +2,7 @@ body {
   background-image: url("img/pubg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -32,7 +33,7 @@ body {
   margin: 3px;
 }
 
-.gun_table {
+.selector_table {
   text-align: center;
 }
 
@@ -51,4 +52,11 @@ h1 {
 h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size : 1em;
+}
+
+#credits {
+  font-size: 1.3em;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: right;
+  margin: 10px;
 }
