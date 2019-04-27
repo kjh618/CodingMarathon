@@ -20,7 +20,7 @@
         </header>
 
         <section class="column" style="width: 30%;">
-            <h1>총기</h1>
+            <h1>총기 선택</h1>
 
             <h2>AR</h2>
             <input type = "radio" name = "gun" value = "AKM">AKM
@@ -81,19 +81,21 @@
         </section>
 
         <section class="column">
-            <h1>머리방어구</h1>
-            <input type = "radio" name = "helmet" value = "없음">없음
-            <input type = "radio" name = "helmet" value = "1레벨 헬멧">1레벨 헬멧
-            <input type = "radio" name = "helmet" value = "2레벨 헬멧">2레벨 헬멧
-            <input type = "radio" name = "helmet" value = "3레벨 헬멧">3레벨 헬멧
-                
-            <h1>몸통방어구</h1>
+            <h1>머리방어구 선택</h1>
+            <table class = "body_part">
+                <tr><td><input type = "radio" name = "helmet" value = "없음">없음</td>
+                    <td><input type = "radio" name = "helmet" value = "1레벨 헬멧">1레벨 헬멧</td>
+                    <td><input type = "radio" name = "helmet" value = "2레벨 헬멧">2레벨 헬멧</td>
+                    <td><input type = "radio" name = "helmet" value = "3레벨 헬멧">3레벨 헬멧</td>
+                </tr>
+            </table> 
+            <h1>몸통방어구 선택</h1>
             <input type = "radio" name = "bodyshield" value = "없음">없음
             <input type = "radio" name = "bodyshield" value = "1레벨 갑옷">1레벨 갑옷
             <input type = "radio" name = "bodyshield" value = "2레벨 갑옷">2레벨 갑옷
             <input type = "radio" name = "bodyshield" value = "3레벨 갑옷">3레벨 갑옷
             
-            <h1>가격 부위</h1>
+            <h1>가격 부위 선택</h1>
             <img src="body.png" width="280px" class="body_part">
             <table class="body_part">
                 <tr><td><input type="button" onclick="addBodyPart('Head')" value="머리"></td></tr>
