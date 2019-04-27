@@ -19,7 +19,7 @@ const GUN_DATA =
     "Initial Bullet Speed": "940 m/s",
     "Body Hit Impact Power": "9,000",
     "Zero Range": "100 - 500",
-    "Time Between Shots": "0.08571",
+    "Time Between Shots": "0.08571s",
     "Firing Modes": "Single, Auto",
     "Burst Shots": "-",
     "Burst Delay": "-",
@@ -40,13 +40,13 @@ const GUN_DATA =
     "Duration (Tactical)": "2.300s",
     "Duration (Single Bullet Initial)": "-",
     "Duration (Single Bullet Repeat)": "-",
-    "Type": "Sniper Rifles"
+    "Type": "Sniper Rifle"
   },
   "Beryl M762": {
     "Hit Damage": "47",
     "Initial Bullet Speed": "715 m/s",
     "Body Hit Impact Power": "10,000",
-    "Time Between Shots": "0.086",
+    "Time Between Shots": "0.086s",
     "Firing Modes": "Single, Burst, Auto",
     "Burst Delay": "0.086",
     "Method": "Magazine",
@@ -71,7 +71,7 @@ const GUN_DATA =
     "Initial Bullet Speed": "715 m/s",
     "Body Hit Impact Power": "10,000",
     "Zero Range": "100 - 1000",
-    "Time Between Shots": "0.109",
+    "Time Between Shots": "0.109s",
     "Firing Modes": "Auto",
     "Method": "Magazine",
     "Duration (Full)": "5.5s",
@@ -81,6 +81,7 @@ const GUN_DATA =
   "G36C": {
     "Hit Damage": "43",
     "Initial Bullet Speed": "870 m/s",
+    "Time Between Shots": "0.0086s",
     "Firing Modes": "Single, Auto",
     "Burst Shots": "-",
     "Burst Delay": "-",
@@ -112,7 +113,7 @@ const GUN_DATA =
     "Duration (Full)": "4.000s",
     "Duration (Single Bullet Initial)": "1.690s",
     "Duration (Single Bullet Repeat)": "0.750s",
-    "Type": "Sniper Rifles"
+    "Type": "Sniper Rifle"
   },
   "M16A4": {
     "Hit Damage": "43",
@@ -127,6 +128,11 @@ const GUN_DATA =
     "Duration (Full)": "2.200s",
     "Duration (Tactical)": "1.900s",
     "Type": "Assault Rifle"
+  },
+  "M24": {
+    "Hit Damage": "79",
+    "Time Between Shots": "1.800s",
+    "Type": "Sniper Rifle"
   },
   "M249": {
     "Hit Damage": "45",
@@ -156,6 +162,7 @@ const GUN_DATA =
   },
   "MP5K": {
     "Hit Damage": "33",
+    "Time Between Shots": "0.067s",
     "Firing Modes": "Single, Burst, Auto",
     "Burst Shots": "-",
     "Burst Delay": "-",
@@ -205,6 +212,7 @@ const GUN_DATA =
     "Hit Damage": "49",
     "Initial Bullet Speed": "780 m/s",
     "Body Hit Impact Power": "10,000",
+    "Time Between Shots": "0.1s",
     "Firing Modes": "Single, Burst",
     "Method": "Magazine",
     "Type": "Assault Rifle"
@@ -248,6 +256,7 @@ const GUN_DATA =
   "PP-19 Bizon": {
     "Hit Damage": "35",
     "Initial Bullet Speed": "408 m/s",
+    "Time Between Shots": "0.086s",
     "Firing Modes": "Single, Auto",
     "Burst Shots": "-",
     "Burst Delay": "-",
@@ -258,6 +267,7 @@ const GUN_DATA =
     "Hit Damage": "43",
     "Initial Bullet Speed": "870 m/s",
     "Body Hit Impact Power": "9,000",
+    "Time Between Shots": "0.092s",
     "Firing Modes": "Single, Auto",
     "Method": "Magazine",
     "Type": "Assault Rifle"
@@ -376,6 +386,7 @@ const GUN_DATA =
   },
   "Sawed-off": {
     "Hit Damage": "20",
+    "Time Between Shots": "0.24s",
     "Firing Modes": "Single",
     "Shot Count": "8",
     "Method": "One by One",
@@ -433,7 +444,7 @@ const GUN_DATA =
     "Duration (Tactical)": "2.100s",
     "Duration (Single Bullet Initial)": "-",
     "Duration (Single Bullet Repeat)": "-",
-    "Type": "Sniper Rifles"
+    "Type": "Rifle"
   },
   "Vector": {
     "Hit Damage": "31",
@@ -448,5 +459,10 @@ const GUN_DATA =
     "Duration (Full)": "2.200s",
     "Duration (Tactical)": "2.100s",
     "Type": "Submachine Gun"
+  },
+  "Winchester Model 1894": {
+    "Hit Damage": "66",
+    "Time Between Shots": "0.6s",
+    "Type": "Sniper Rifle"
   }
 }
