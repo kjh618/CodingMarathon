@@ -6,22 +6,34 @@
   height: 100%;
   left: 0%;
 }
+
 #title {
   margin : 10px;
   text-align: center;
   font-size: 3em;
   font-family: cursive;
 }
+
+.column {
+  display: inline-block;
+}
+
 #menu1 {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size : 40px;
   width: 225px;
 }
+#guntype {
+  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size : 1em;
+}
+
 #menu2 {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size : 25px;
   width: 300px;
 }
+
 #menu3 {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size : 25px;
@@ -38,10 +50,6 @@
   vertical-align: top;
 }
 
-#guntype {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size : 1em;
-}
 #menu5 {
   font-size : 5em;
 }

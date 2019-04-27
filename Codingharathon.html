@@ -16,7 +16,7 @@
             <header>
                 <h1 id = "title">PUBG 데미지 계산기</h1>
             </header>
-            <section style = "position : absolute; top : 200px; left : 100px; width : 33%;">
+            <section class="column" style="width: 20%;">
                     <h1 id = "menu1"> 총기</h1>
                         <h1 id = "guntype"> AR </h1>
                         <input type = "radio" name = "gun" value = "AKM" >AKM
@@ -66,7 +66,7 @@
                         <h1 id = "guntype"> 기타 </h1>
                         <input type = "radio" name = "gun" value = "Crossbow">석궁
             </section>
-            <section style = "position : absolute; top: 100px; left : 850px; width : 33%;">
+            <section class="column" style="width: 20%;">
                     <h1 id = "menu2"> 머리방어구</h1>
                     <input type = "radio" name = "helmet" value = "없음">없음
                     <input type = "radio" name = "helmet" value = "1레벨 헬멧">1레벨 헬멧
@@ -79,9 +79,7 @@
                     <input type = "radio" name = "bodyshield" value = "2레벨 갑옷">2레벨 갑옷
                     <input type = "radio" name = "bodyshield" value = "3레벨 갑옷">3레벨 갑옷
                 </div>
-
-            </section>
-            <section style = "position : absolute; top : 400px; left : 850px;">
+                
                 <h1 id="menu4" >가격 부위</h1>
                 <img src="body.png" width="280px" class="body_part">
                 <table class="body_part">
@@ -102,10 +100,10 @@
                     </ol>
                 </div>
             </section>
-            <section style = "position : absolute; top : 450px; left : 1350px;">
-                <input type = "button" onclick = "enter()"value = "확인">
+            <section class="column" style="width: 20%;">
+                <input type = "button" onclick = "enter()" value = "확인">
             </section>
-            <section style = "position : absolute; top : 400px ; left: 1500px;">
+            <section class="column" style="width: 20%;">
                 <div>
                     <p id = time >킬까지 걸리는 시간: </p>
                     <p id = damage>총 데미지</p>
