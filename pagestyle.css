@@ -3,14 +3,16 @@
   background-color: rgb(255, 255, 255);
   position: relative;
   width: 100%;
-  height: 100%;
   left: 0%;
+  height: 100%;
 }
 #title {
   margin : 10px;
   text-align: center;
   font-size: 3em;
   font-family: cursive;
+  border: solid black;
+  width: 30%;
 }
 #menu1 {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -44,4 +46,7 @@
 }
 #menu5 {
   font-size : 5em;
+}
+.center {
+  text-align: center;
 }
