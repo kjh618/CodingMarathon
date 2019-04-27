@@ -7,7 +7,7 @@ header {
   margin : 10px;
   text-align: center;
   font-size: 3em;
-  font-family: cursive;
+  font-family: 'Noto Sans KR', sans-serif;
   border: solid black;
   width: 40%;
 }
@@ -23,15 +23,16 @@ header {
 .body_part {
   display: inline-block;
   vertical-align: top;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 1.5em;
   text-align: center;
 }
 
 h2 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 1em;
 }
