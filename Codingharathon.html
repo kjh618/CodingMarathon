@@ -4,7 +4,12 @@
         <meta charset = "utf-8" />
         <title> PUBG 데미지 계산기</title>
         <link rel= "stylesheet" href = "pagestyle.css">
-        <script src = "code.js"></script>
+        <script src="data/gun_data.js"></script>
+        <script src="data/helmet_data.js"></script>
+        <script src="data/vest_data.js"></script>
+        <script src="data/body_part_modifier.js"></script>
+        <script src="calculation.js"></script>
+        <script src="code.js"></script>
     </head>
     <body>
         <section id="app">
@@ -55,6 +60,8 @@
                             <input type = "radio" name = "gun" value = "Mk14">Mk14
                         </div>
                     </div>
+            </section>
+            <section>
                 <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">
                     <h1 id = "menu2"> 머리방어구(클릭해서 열기)</h1>
                 </a><div style="DISPLAY: none">
@@ -69,23 +76,29 @@
                     <input type = "radio" name = "bodyshield" value = "2레벨 갑옷">2레벨 갑옷
                     <input type = "radio" name = "bodyshield" value = "3레벨 갑옷">3레벨 갑옷
                 </div>
-                <h1 id = "menu4" >가격 부위</h1>
-                <img src = "body.png" align = "left" width = "280px">
-                    <p>머리 <input type = "text" style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>목 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>어깨 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>팔뚝 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>가슴 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>명치 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>팔목 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>허리 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>손 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>아랫배 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>허벅지 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>종아리 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>발 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                    <p>나머지 <input type = "text"style = "width: 40px;height: 20px;font-size: 17px;"> 회</p>
-                <input type = "button" value = "확인">
+            </section>
+            <section>
+                <h1 id="menu4" >가격 부위</h1>
+                <img src="body.png" width="280px" class="body_part">
+                <table class="body_part">
+                    <tr><td><input type="button" onclick="addBodyPart('Head')" value="Head"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Neck')" value="Neck"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Clavicles')" value="Clavicles"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Upper chest')" value="Upper chest"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Lower chest')" value="Lower chest"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Stomach')" value="Stomach"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Pelvis')" value="Pelvis"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Upper limb')" value="Upper limb"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Lower limb')" value="Lower limb"></td></tr>
+                    <tr><td><input type="button" onclick="addBodyPart('Hand/foot')" value="Hand/foot"></td></tr>
+                </table>
+                <div class="body_part">
+                    <input type="button" onclick = "removeBodyPart()" value="삭제">
+                    <ol id="body_part_list">
+                    </ol>
+                </div>
+            </section>
+            <section>
                 <div style = "position : relative; bottom:500px;left:1000px;">
                     <p>킬까지 걸리는 시간:</p>
                     <p>총 데미지</p>

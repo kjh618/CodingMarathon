@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 
 f = open('data/gun_list.json', 'r')
-gun_list = eval(f.read())
+gun_list = json.load(f)
 f.close()
 
 gun_data = dict()
@@ -30,6 +30,6 @@ for gun in gun_list:
 
     print('Done')
 
-out = open('data/gun_data.js', 'w')
-json.dump(gun_data, out, indent=2)
-out.close()
+f = open('data/gun_data.js', 'w')
+json.dump(gun_data, f, indent=2)
+f.close()
