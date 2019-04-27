@@ -64,13 +64,6 @@ function removeBodyPart() {
 
   console.log("removeBodyPart()");
 }
-document.getElementsByTagName('img').forEach((elem) => {
-    consonle.log(elem.getAttribute('src'));
-});
-function imgclick(){
-    a = $(this).parent().children().index($(this));
-    $('tr:eq(1) > td: eq(a)').prop("checked", true);
-}
 function enter(){
     var a = radio_chk("gun");
     var b = radio_chk("helmet");
@@ -82,7 +75,7 @@ function enter(){
     shotsToKill.forEach(damage => {
       shotsToKillString += damage.toFixed(1) + ", ";
     });
-    document.getElementById("damage").innerText = "데미지: " + shotsToKillString.slice(0, -2);
+    document.getElementById("damage").innerText = "총알 당 데미지: " + shotsToKillString.slice(0, -2);
     document.getElementById("shots").innerText = "필요한 총알 수: " + shotsToKill.length;
 
     console.log("enter(): " + bodyParts);
