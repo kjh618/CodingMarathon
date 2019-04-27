@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset = "utf-8" />
-        <title> PUBG 데미지 계산기</title>
+        <title>PUBG 데미지 계산기</title>
         <link rel= "stylesheet" href = "pagestyle.css">
         <script src="data/gun_data.js"></script>
         <script src="data/helmet_data.js"></script>
@@ -14,7 +14,9 @@
     </head>
     <body>
         <header>
-            배틀그라운드 데미지 계산기
+            <section id="title">
+                PUBG 데미지 계산기
+            </section>
         </header>
 
         <section class="column" style="width: 30%;">
@@ -73,7 +75,11 @@
             <h2>기타</h2>
             <input type = "radio" name = "gun" value = "Crossbow">석궁
         </section>
-        
+
+        <section class="divider">
+            ->
+        </section>
+
         <section class="column">
             <h1>머리방어구</h1>
             <input type = "radio" name = "helmet" value = "없음">없음
@@ -109,13 +115,14 @@
             </div>
         </section>
 
-        <section class="column">
+        <section class="divider">
+            <div>-></div>
             <input type = "button" onclick = "enter()" value = "확인">
         </section>
 
         <section class="column">
             <p id = "time">킬까지 걸리는 시간: </p>
-            <p id = "damage">대미지: </p>
+            <p id = "damage">데미지: </p>
             <p id = "shots">필요한 총알 수: </p>
         </section>
     </body>

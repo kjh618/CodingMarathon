@@ -1,16 +1,16 @@
 body {
-  background-color: rgb(91, 140, 214);
-  padding: 1%;
+  background-color: rgb(77, 133, 218);
+  padding: 5px;
+  text-align: center
 }
 
-header {
+#title {
   margin : 10px;
-  text-align: center;
   font-size: 3em;
   font-family: 'Noto Sans KR', sans-serif;
   background-color: white;
   border: solid black;
-  width: 40%;
+  display: inline-block;
 }
 
 .column {
@@ -19,6 +19,12 @@ header {
   border: solid black;
   font-family: 'Noto Sans KR', sans-serif;
   background-color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.divider {
+  display: inline-block;
   padding: 10px;
 }
 
@@ -31,6 +37,7 @@ header {
 h1 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size : 1.5em;
+  text-align: center;
 }
 
 h2 {
