@@ -12,6 +12,7 @@ function radio_chk(name){
             alert("선택해주세요");
             return;
         }
+    }
     else if (name == helmet || name == bodyshield){
         var radio_button = document.getElementsByName(name);
         var radio_button_check = 0;
@@ -27,11 +28,6 @@ function radio_chk(name){
         }
     }
 }
-function enter(){
-    var a = radio_chk(gun)
-    var b = radio_chk(helmet)
-    var c = redio_chk(bodyshield)
-    caculateDamage(a,b,c)
 
 let bodyParts = [];
 
@@ -41,7 +37,7 @@ function addBodyPart(bodyPart) {
   let bodyPartList = document.getElementById('body_part_list');
   let item = document.createElement('li')
   item.innerText = bodyPart;
-  bodyPartList.append(item);
+  bodyPartList.appendChild(item);
 
   console.log("addBodyPart(): " + bodyPart);
 }
@@ -53,4 +49,12 @@ function removeBodyPart() {
   bodyPartList.removeChild(bodyPartList.lastChild);
 
   console.log("removeBodyPart()");
+}
+
+function enter(){
+    var a = radio_chk(gun)
+    var b = radio_chk(helmet)
+    var c = redio_chk(bodyshield)
+    var d = 
+    caculateDamage(a,b,c)
 }
