@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(91, 140, 214);
   padding: 1%;
 }
 
@@ -8,6 +8,7 @@ header {
   text-align: center;
   font-size: 3em;
   font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
   border: solid black;
   width: 40%;
 }
@@ -16,6 +17,8 @@ header {
   display: inline-block;
   vertical-align: top;
   border: solid black;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
   padding: 10px;
 }
 
