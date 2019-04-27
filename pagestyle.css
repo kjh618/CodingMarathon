@@ -54,6 +54,11 @@ h2 {
   font-size : 1em;
 }
 
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
 #credits {
   font-size: 1.3em;
   font-family: 'Noto Sans KR', sans-serif;

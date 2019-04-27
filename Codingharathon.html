@@ -15,7 +15,7 @@
     <body>
         <header>
             <section id="title">
-                PUBG 데미지 계산기
+                배틀그라운드 데미지 계산기
             </section>
         </header>
 
@@ -131,24 +131,24 @@
             </table>
             
             <h1>발사 부위 선택</h1>
-            <img src="img/body.jpg" width="280px" class="body_part">
-            <table class="body_part">
-                <tr><td><input type="button" onclick="addBodyPart('Head')" value="머리"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Neck')" value="목"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Clavicles')" value="어깨"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Upper chest')" value="흉부 상부"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Lower chest')" value="흉부 하부"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Stomach')" value="배"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Pelvis')" value="골반"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Upper limb')" value="팔/다리 상부"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Lower limb')" value="팔/다리 하부"></td></tr>
-                <tr><td><input type="button" onclick="addBodyPart('Hand/foot')" value="손/발"></td></tr>
-            </table>
-            <div class="body_part" style="width:150px">
-                <input type="button" onclick = "removeBodyPart()" value="삭제">
+            <div class="body_part" style = "position: relative">
+                <img src="img/body.jpg" width="280px" class="body_part">
+                <input type="button" onclick="addBodyPart('Head')" value="머리" style = "position: absolute; top: 35px; left: 120px;">
+                <input type="button" onclick="addBodyPart('Neck')" value="목"style = "position: absolute; top: 100px; left: 125px;">
+                <input type="button" onclick="addBodyPart('Clavicles')" value="어깨"style = "position: absolute; top: 110px; left: 170px;">
+                <input type="button" onclick="addBodyPart('Upper chest')" value="흉부 상부"style = "position: absolute; top: 150px; left:105px;">
+                <input type="button" onclick="addBodyPart('Lower chest')" value="흉부 하부"style = "position: absolute; top: 220px; left:105px;">
+                <input type="button" onclick="addBodyPart('Stomach')" value="배"style = "position: absolute; top: 270px; left: 125px;">
+                <input type="button" onclick="addBodyPart('Pelvis')" value="골반"style = "position: absolute; top: 300px; left: 120px;">
+                <input type="button" onclick="addBodyPart('Upper limb')" value="팔/다리 상부"style = "position: absolute; top: 370px; left: 155px;">
+                <input type="button" onclick="addBodyPart('Lower limb')" value="팔/다리 하부"style = "position: absolute; top: 520px; left: 180px;">
+                <input type="button" onclick="addBodyPart('Hand/foot')" value="손/발"style = "position: absolute; top: 310px; left: 240px;">
+            </div>
+            <div class="body_part">
+                <input type="button" onclick = "removeBodyPart()" value="삭제" >
                 <ol id="body_part_list">
                 </ol>
-                나머지: 흉부 상부
+                <p>나머지: 흉부 상부</p>
             </div>
         </section>
 
@@ -159,7 +159,7 @@
 
         <section class="column" style="width: 250px">
             <p id = "time">킬까지 걸리는 시간: </p>
-            <p id = "damage">데미지: </p>
+            <p id = "damage">총알 당 데미지: </p>
             <p id = "shots">필요한 총알 수: </p>
         </section>
 
