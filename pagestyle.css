@@ -52,3 +52,7 @@ h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size : 1em;
 }
+ol{
+  list-style-position: inside;
+  padding-left: 0;
+}
