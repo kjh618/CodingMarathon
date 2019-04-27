@@ -1,3 +1,4 @@
+const GUN_LIST =
 [
   "AKM",
   "AUG A3",
