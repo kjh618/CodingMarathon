@@ -27,11 +27,17 @@
   font-size : 25px;
   width: 300px;
 }
+
 #menu4 {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size : 25px;
   width: 110px;
 }
+.body_part {
+  display: inline-block;
+  vertical-align: top;
+}
+
 #guntype {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size : 1em;
