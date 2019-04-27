@@ -12,6 +12,12 @@ const BODY_PART_KOREAN = new Map([
 ]);
 let bodyParts = [];
 
+function cellClicked(radioButton) {
+  radioButton.checked = true;
+
+  console.log('cellClicked()');
+}
+
 function radio_chk(name){
     if (name == "gun"){
         var radio_button = document.getElementsByName(name);
@@ -64,13 +70,7 @@ function removeBodyPart() {
 
   console.log("removeBodyPart()");
 }
-document.getElementsByTagName('img').forEach((elem) => {
-    consonle.log(elem.getAttribute('src'));
-});
-function imgclick(){
-    a = $(this).parent().children().index($(this));
-    $('tr:eq(1) > td: eq(a)').prop("checked", true);
-}
+
 function enter(){
     var a = radio_chk("gun");
     var b = radio_chk("helmet");
