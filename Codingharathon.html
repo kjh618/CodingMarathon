@@ -19,10 +19,10 @@
             </section>
         </header>
 
-        <section class="column" style="width: 30%;">
+        <section class="column" >
             <h1>총기</h1>
             <h2>AR</h2>
-            <table>
+            <table class="gun_table">
                 <tr>
                     <td><img src="img/AKM.png" width="75px"/><br><input name="gun" type="radio" value="AKM"/>AKM</td>
                     <td><img src="img/M16A4.png" width="75px"/><br><input name="gun" type="radio" value="M16A4"/>M16A4</td>
@@ -38,8 +38,9 @@
                     <td><img src="img/QBZ95.png" width="75px"/><br><input name="gun" type="radio" value="QBZ95"/>QBZ</td>
                 </tr>
             </table>
+
             <h2>SMG/LMG</h2>
-            <table>
+            <table class="gun_table">
                 <tr>
                     <td><img src="img/Micro_UZI.png" width="75px"/><br><input name="gun" type="radio" value="Micro UZI"/>Micro UZI</td>
                     <td><img src="img/UMP45.png" width="75px"/><br><input name="gun" type="radio" value="UMP45"/>UMP9</td>
@@ -55,7 +56,7 @@
             </table>
 
             <h2>Shotgun</h2>
-            <table>
+            <table class="gun_table">
                 <tr>
                     <td><img src="img/S1897.png" width="75px"/><br><input name="gun" type="radio" value="S1897"/>S1897</td>
                     <td><img src="img/S686.png" width="75px"/><br><input name="gun" type="radio" value="S686"/>S686</td>
@@ -65,7 +66,7 @@
             </table>
 
             <h2>SR</h2>
-            <table>
+            <table class="gun_table">
                 <tr>
                     <td><img src="img/Karabiner_98_Kurz.png" width="75px"/><br><input name="gun" type="radio" value="Karabiner 98 Kurz"/>Kar98</td>
                     <td><img src="img/Mini_14.png" width="75px"/><br><input name="gun" type="radio" value="Mini 14"/>Mini 14</td>
@@ -82,7 +83,7 @@
             </table>
 
             <h2>권총</h2>
-            <table>
+            <table class="gun_table">
                 <tr>
                     <td><img src="img/P18C.png" width="75px"/><br><input name="gun" type="radio" value="P18C"/>P18C</td>
                     <td><img src="img/P1911.png" width="75px"/><br><input name="gun" type="radio" value="P1911"/>P1911</td>
@@ -96,7 +97,7 @@
             </table>
 
             <h2>기타</h2>
-            <table>
+            <table class="gun_table">
                 <tr>
                     <td><img src="img/Crossbow.png" width="75px"/><br><input name="gun" type="radio" value="Crossbow"/>석궁</td>
                 </tr>
@@ -104,7 +105,7 @@
         </section>
 
         <section class="divider">
-            ->
+            <p>-></p>
         </section>
 
         <section class="column">
@@ -121,7 +122,7 @@
             <input type = "radio" name = "bodyshield" value = "3레벨 갑옷">3레벨 갑옷
             
             <h1>가격 부위</h1>
-            <img src="img/body.png" width="280px" class="body_part">
+            <img src="img/body.jpg" width="280px" class="body_part">
             <table class="body_part">
                 <tr><td><input type="button" onclick="addBodyPart('Head')" value="머리"></td></tr>
                 <tr><td><input type="button" onclick="addBodyPart('Neck')" value="목"></td></tr>
@@ -143,11 +144,11 @@
         </section>
 
         <section class="divider">
-            <div>-></div>
+            <p>-></p>
             <input type = "button" onclick = "enter()" value = "확인">
         </section>
 
-        <section class="column">
+        <section class="column" style="width: 20%">
             <p id = "time">킬까지 걸리는 시간: </p>
             <p id = "damage">데미지: </p>
             <p id = "shots">필요한 총알 수: </p>
