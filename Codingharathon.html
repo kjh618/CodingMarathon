@@ -11,6 +11,7 @@
         <script src="calculation.js"></script>
         <script src="code.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+        <script src = "https://code.jquery.com/jquery=3.4.0.min.js"></script>
     </head>
     <body>
         <header>
@@ -83,20 +84,36 @@
         <section class="column">
             <h1>머리방어구 선택</h1>
             <table class = "body_part">
-                <tr><td><input type = "radio" name = "helmet" value = "없음">없음</td>
-                    <td><input type = "radio" name = "helmet" value = "1레벨 헬멧">1레벨 헬멧</td>
-                    <td><input type = "radio" name = "helmet" value = "2레벨 헬멧">2레벨 헬멧</td>
-                    <td><input type = "radio" name = "helmet" value = "3레벨 헬멧">3레벨 헬멧</td>
+                <tr><td><img src="img/0뚝.png"  width="70px" ></td>
+                    <td><img src="img/1뚝.png"  width="70px" ></td>
+                    <td><img src="img/2뚝.png"  width="70px" ></td>
+                    <td><img src="img/3뚝.png"  width="70px" ></td>
                 </tr>
-            </table> 
+                <tr><td><input type = "radio"  name = "helmet" value = "없음">없음</td>
+                    <td><input type = "radio"  name = "helmet" value = "1레벨 헬멧">1레벨 헬멧</td>
+                    <td><input type = "radio"  name = "helmet" value = "2레벨 헬멧">2레벨 헬멧</td>
+                    <td><input type = "radio"  name = "helmet" value = "3레벨 헬멧">3레벨 헬멧</td>
+                </tr>
+                
+            </table>
+
             <h1>몸통방어구 선택</h1>
-            <input type = "radio" name = "bodyshield" value = "없음">없음
-            <input type = "radio" name = "bodyshield" value = "1레벨 갑옷">1레벨 갑옷
-            <input type = "radio" name = "bodyshield" value = "2레벨 갑옷">2레벨 갑옷
-            <input type = "radio" name = "bodyshield" value = "3레벨 갑옷">3레벨 갑옷
+            <table class = "body_part">
+                    <tr><td><img src="img/0갑.png" width="70px"></td>
+                        <td><img src="img/1갑.png" width="70px"></td>
+                        <td><img src="img/2갑.png" width="70px"></td>
+                        <td><img src="img/3갑.png" width="70px"></td>
+                    </tr>
+                    <tr><td><input type = "radio" name = "bodyshield" value = "없음">없음</td>
+                        <td><input type = "radio" name = "bodyshield" value = "1레벨 갑옷">1레벨 갑옷</td>
+                        <td><input type = "radio" name = "bodyshield" value = "2레벨 갑옷">2레벨 갑옷</td>
+                        <td><input type = "radio" name = "bodyshield" value = "3레벨 갑옷">3레벨 갑옷</td>
+                    </tr>
+                    
+                </table>
             
-            <h1>가격 부위 선택</h1>
-            <img src="body.png" width="280px" class="body_part">
+            <h1>발사 부위 선택</h1>
+            <img src="img/body.png" width="280px" class="body_part">
             <table class="body_part">
                 <tr><td><input type="button" onclick="addBodyPart('Head')" value="머리"></td></tr>
                 <tr><td><input type="button" onclick="addBodyPart('Neck')" value="목"></td></tr>
@@ -126,6 +143,9 @@
             <p id = "time">킬까지 걸리는 시간: </p>
             <p id = "damage">데미지: </p>
             <p id = "shots">필요한 총알 수: </p>
+        </section>
+        <section style = "position:relative; top: 0px; left: 750px; font-size: 1.3em; font-family: 'Noto Sans KR', sans-serif;">
+            <p>Made by 김지훈, 정예준</p>
         </section>
     </body>
 </html>

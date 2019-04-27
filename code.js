@@ -64,8 +64,12 @@ function removeBodyPart() {
 
   console.log("removeBodyPart()");
 }
-function shot(){
-
+document.getElementsByTagName('img').forEach((elem) => {
+    consonle.log(elem.getAttribute('src'));
+});
+function imgclick(){
+    a = $(this).parent().children().index($(this));
+    $('tr:eq(1) > td: eq(a)').prop("checked", true);
 }
 function enter(){
     var a = radio_chk("gun");
