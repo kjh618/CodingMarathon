@@ -1,13 +1,16 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-image: url("pubg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px;
-  text-align: center
+  text-align: center;
 }
 
 #title {
   margin : 10px;
   font-size: 3em;
   font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
   border: solid black;
   display: inline-block;
 }
@@ -16,6 +19,8 @@ body {
   display: inline-block;
   vertical-align: top;
   border: solid black;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
   padding: 10px;
   text-align: left;
 }
