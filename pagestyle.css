@@ -1,60 +1,35 @@
-#app {
-  padding-top: 1em;
+body {
   background-color: rgb(255, 255, 255);
-  position: relative;
-  width: 100%;
-  left: 0%;
-  height: 100%;
+  padding: 1%;
 }
 
-#title {
+header {
   margin : 10px;
   text-align: center;
   font-size: 3em;
   font-family: cursive;
   border: solid black;
-  width: 30%;
+  width: 40%;
 }
 
 .column {
   display: inline-block;
+  vertical-align: top;
+  border: solid black;
+  padding: 10px;
 }
 
-#menu1 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size : 40px;
-  width: 225px;
-}
-#guntype {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size : 1em;
-}
-
-#menu2 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size : 25px;
-  width: 300px;
-}
-
-#menu3 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size : 25px;
-  width: 300px;
-}
-
-#menu4 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size : 25px;
-  width: 110px;
-}
 .body_part {
   display: inline-block;
   vertical-align: top;
 }
 
-#menu5 {
-  font-size : 5em;
+h1 {
+  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size : 1.5em;
 }
-.center {
-  text-align: center;
+
+h2 {
+  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size : 1em;
 }
