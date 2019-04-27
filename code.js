@@ -57,7 +57,7 @@ function enter(){
     var b = radio_chk("helmet");
     var c = radio_chk("bodyshield");
     var d = bodyParts;
-    document.getElementById("time").innerText = "킬까지 걸리는 시간:" + calculateTimeToKill(a,b,c,d)
+    document.getElementById("time").innerText = "킬까지 걸리는 시간:" + calculateTimeToKill(a,b,c,d) + "초"
     document.getElementById("damage").innerText = "총 데미지:" + calculateDamage(a,b,c,d)
-    document.getElementById("shots").innerText = "필요한 총알 수:" + calculateShotsToKill(a,b,c,d)
+    document.getElementById("shots").innerText = "필요한 총알 수:" + calculateShotsToKill(a,b,c,d) + "개"
 }
