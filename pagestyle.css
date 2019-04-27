@@ -3,8 +3,8 @@
   background-color: rgb(255, 255, 255);
   position: relative;
   width: 100%;
-  height: 100%;
   left: 0%;
+  height: 100%;
 }
 
 #title {
@@ -12,6 +12,8 @@
   text-align: center;
   font-size: 3em;
   font-family: cursive;
+  border: solid black;
+  width: 30%;
 }
 
 .column {
@@ -52,4 +54,7 @@
 
 #menu5 {
   font-size : 5em;
+}
+.center {
+  text-align: center;
 }
