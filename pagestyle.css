@@ -17,6 +17,7 @@ header {
   vertical-align: top;
   border: solid black;
   padding: 10px;
+  text-align: left;
 }
 
 .body_part {
@@ -27,6 +28,7 @@ header {
 h1 {
   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size : 1.5em;
+  text-align: center;
 }
 
 h2 {
