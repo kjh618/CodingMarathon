@@ -1,4 +1,4 @@
-const ARMOR_DATA =
+const VEST_DATA =
 [
   {
     "Name": "No Armor",

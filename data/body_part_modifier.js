@@ -36,7 +36,7 @@ const BODY_PART_MODIFIER =
     "Lower limb": 90,
     "Hand/foot": 90
   },
-  "SMG": {
+  "Submachine Gun": {
     "Head": 180,
     "Neck": 180,
     "Clavicles": 100,
@@ -60,7 +60,7 @@ const BODY_PART_MODIFIER =
     "Lower limb": 90,
     "Hand/foot": 90
   },
-  "LMG": {
+  "Light Machine Gun": {
     "Head": 230,
     "Neck": 230,
     "Clavicles": 100,
@@ -72,7 +72,7 @@ const BODY_PART_MODIFIER =
     "Lower limb": 90,
     "Hand/foot": 90
   },
-  "Crossbow": {
+  "Miscellaneous": {
     "Head": 230,
     "Neck": 230,
     "Clavicles": 100,
@@ -84,7 +84,7 @@ const BODY_PART_MODIFIER =
     "Lower limb": 100,
     "Hand/foot": 100
   },
-  "DMR": {
+  "Rifle": {
     "Head": 235,
     "Neck": 235,
     "Clavicles": 105,
@@ -96,7 +96,7 @@ const BODY_PART_MODIFIER =
     "Lower limb": 95,
     "Hand/foot": 95
   },
-  "Sniper": {
+  "Sniper Rifles": {
     "Head": 250,
     "Neck": 250,
     "Clavicles": 130,
