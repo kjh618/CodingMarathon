@@ -12,41 +12,49 @@
   font-size: 3em;
   font-family: cursive;
   border: solid black;
-  width: 30%;
+  width: 25%;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 #menu1 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 40px;
   width: 225px;
 }
 #menu2 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 25px;
   width: 300px;
 }
 #menu3 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 25px;
   width: 300px;
 }
 
 #menu4 {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 25px;
   width: 110px;
 }
 .body_part {
   display: inline-block;
   vertical-align: top;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 #guntype {
-  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size : 1em;
-}
-#menu5 {
-  font-size : 5em;
 }
 .center {
   text-align: center;
+}
+#gun{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#helmet{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#bodyshield{
+  font-family: 'Noto Sans KR', sans-serif;
 }
