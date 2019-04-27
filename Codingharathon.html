@@ -11,7 +11,6 @@
         <script src="calculation.js"></script>
         <script src="code.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
-        <script src = "https://code.jquery.com/jquery=3.4.0.min.js"></script>
     </head>
     <body>
         <header>
@@ -20,7 +19,7 @@
             </section>
         </header>
 
-        <section class="column" style="width: 30%;">
+        <section class="column">
             <h1>총기 선택</h1>
 
             <h2>AR</h2>
@@ -40,6 +39,7 @@
                     <td><img src="img/QBZ95.png" width="75px"/><br><input name="gun" type="radio" value="QBZ95"/>QBZ</td>
                 </tr>
             </table>
+
             <h2>SMG/LMG</h2>
             <table>
                 <tr>
@@ -106,7 +106,7 @@
         </section>
 
         <section class="divider">
-            ->
+            <div>-></div>
         </section>
 
         <section class="column">
@@ -141,7 +141,7 @@
                 </table>
             
             <h1>발사 부위 선택</h1>
-            <img src="img/body.png" width="280px" class="body_part">
+            <img src="img/body.jpg" width="280px" class="body_part">
             <table class="body_part">
                 <tr><td><input type="button" onclick="addBodyPart('Head')" value="머리"></td></tr>
                 <tr><td><input type="button" onclick="addBodyPart('Neck')" value="목"></td></tr>
@@ -172,6 +172,7 @@
             <p id = "damage">총알 당 데미지: </p>
             <p id = "shots">필요한 총알 수: </p>
         </section>
+        
         <section style = "position:relative; top: 0px; left: 750px; font-size: 1.3em; font-family: 'Noto Sans KR', sans-serif;">
             <p>Made by 김지훈, 정예준</p>
         </section>
