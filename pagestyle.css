@@ -1,7 +1,9 @@
 body {
-  background-color: rgb(77, 133, 218);
+  background-image: url("pubg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px;
-  text-align: center
+  text-align: center;
 }
 
 #title {
