@@ -1,3 +1,17 @@
+const BODY_PART_KOREAN = new Map([
+  ['Head', '머리'],
+  ['Neck', '목'],
+  ['Clavicles', '어깨'],
+  ['Upper chest', '흉부 상부'],
+  ['Lower chest', '흉부 하부'],
+  ['Stomach', '배'],
+  ['Pelvis', '골반'],
+  ['Upper limb', '팔/다리 상부'],
+  ['Lower limb', '팔/다리 하부'],
+  ['Hand/foot', '손/발'],
+]);
+let bodyParts = [];
+
 function radio_chk(name){
     if (name == "gun"){
         var radio_button = document.getElementsByName(name);
@@ -12,6 +26,7 @@ function radio_chk(name){
             alert("선택해주세요");
             return;
         }
+      }
     else if (name == helmet || name == bodyshield){
         var radio_button = document.getElementsByName(name);
         var radio_button_check = 0;
@@ -27,21 +42,21 @@ function radio_chk(name){
         }
     }
 }
+
 function enter(){
     var a = radio_chk(gun)
     var b = radio_chk(helmet)
     var c = redio_chk(bodyshield)
     caculateDamage(a,b,c)
-
-let bodyParts = [];
+}
 
 function addBodyPart(bodyPart) {
   bodyParts.push[bodyPart];
 
   let bodyPartList = document.getElementById('body_part_list');
   let item = document.createElement('li')
-  item.innerText = bodyPart;
-  bodyPartList.append(item);
+  item.innerText = BODY_PART_KOREAN.get(bodyPart);
+  bodyPartList.appendChild(item);
 
   console.log("addBodyPart(): " + bodyPart);
 }
@@ -50,7 +65,9 @@ function removeBodyPart() {
   bodyParts.pop();
 
   let bodyPartList = document.getElementById('body_part_list');
-  bodyPartList.removeChild(bodyPartList.lastChild);
+  if (bodyPartList.lastChild !== null) {
+    bodyPartList.removeChild(bodyPartList.lastChild);
+  }
 
   console.log("removeBodyPart()");
 }
