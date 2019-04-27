@@ -26,27 +26,31 @@ function calculateDamage(gun, helmet, vest, bodyPart) {
 }
 
 function calculateShotsToKill(gun, helmet, vest, bodyParts) {
-  let damage = 0;
-  let count = 0;
-  while (damage < HP) {
+  let shots = [];
+  let totalDamage = 0;
+  let i = 0
+  while (totalDamage < HP) {
     let bodyPart;
-    if (count >= bodyParts.length) {
+    if (i >= bodyParts.length) {
       bodyPart = DEFAULT_BODY_PART;
     }
     else {
-      bodyPart = bodyParts[count];
+      bodyPart = bodyParts[i];
     }
 
-    damage += calculateDamage(gun, helmet, vest, bodyPart);
-    count++;
+    let damage = calculateDamage(gun, helmet, vest, bodyPart);
+    shots.push(damage);
+    totalDamage += damage;
+
+    i++;
   }
 
-  return count;
+  return shots;
 }
 
 function calculateTimeToKill(gun, helmet, armor, bodyParts) {
   let shotsToKill = calculateShotsToKill(gun, helmet, armor, bodyParts);
   let timeBetweenShots = parseFloat(GUN_DATA[gun]['Time Between Shots']);
 
-  return shotsToKill * timeBetweenShots;
+  return shotsToKill.length * timeBetweenShots;
 }
