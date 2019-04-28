@@ -63,6 +63,12 @@ ol {
   padding-left: 0;
 }
 
+.damage_indicator {
+  color: red;
+  font-weight: bold;
+  padding: 3px;
+}
+
 #credits {
   font-size: 1.15em;
   font-family: 'Noto Sans KR', sans-serif;

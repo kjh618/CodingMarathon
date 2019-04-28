@@ -10,6 +10,18 @@ const BODY_PART_KOREAN = new Map([
   ['Lower limb', '팔/다리 하부'],
   ['Hand/foot', '손/발'],
 ]);
+const BODY_PART_ID = new Map([
+  ['Head', 'head'],
+  ['Neck', 'neck'],
+  ['Clavicles', 'clavicles'],
+  ['Upper chest', 'upper_chest'],
+  ['Lower chest', 'lower_chest'],
+  ['Stomach', 'stomach'],
+  ['Pelvis', 'pelvis'],
+  ['Upper limb', 'upper_limb'],
+  ['Lower limb', 'lower_limb'],
+  ['Hand/foot', 'hand_foot'],
+]);
 let bodyParts = [];
 
 function cellClicked(radioButton) {
@@ -71,19 +83,54 @@ function removeBodyPart() {
   console.log("removeBodyPart()");
 }
 
-function enter(){
-    var a = radio_chk("gun");
-    var b = radio_chk("helmet");
-    var c = radio_chk("bodyshield");
+function updateDamageIndicators(shotsToKill) {
+  for (di of document.getElementsByClassName("damage_indicator")) {
+    di.innerText = "";
+  }
 
-    document.getElementById("time").innerText = "킬까지 걸리는 시간: " + calculateTimeToKill(a,b,c,bodyParts).toFixed(3) + "초";
-    let shotsToKill = calculateShotsToKill(a,b,c,bodyParts);
-    let shotsToKillString = "";
-    shotsToKill.forEach(damage => {
-      shotsToKillString += damage.toFixed(1) + ", ";
-    });
-    document.getElementById("damage").innerText = "총알 당 데미지: " + shotsToKillString.slice(0, -2);
+  let bodyPart = "";
+  let prevBodyPart = bodyParts[0];
+  let damageCount = 0;
+  let count = 1;
+  let i;
+
+  for (i=0; i<shotsToKill.length; i++) {
+    if (i >= bodyParts.length) {
+      bodyPart = DEFAULT_BODY_PART;
+    }
+    else {
+      bodyPart = bodyParts[i];
+    }
+
+    if (bodyPart !== prevBodyPart) {
+      document.getElementById(BODY_PART_ID.get(prevBodyPart)).innerText =
+        count + ": " + shotsToKill[i-1].toFixed(1) + "×" + damageCount;
+      damageCount = 0;
+      count++;
+    }
+
+    damageCount++;
+    prevBodyPart = bodyPart;
+  }
+  document.getElementById(BODY_PART_ID.get(prevBodyPart)).innerText =
+    count + ": " + shotsToKill[i-1].toFixed(1) + "×" + damageCount;
+}
+
+function enter() {
+    let a = radio_chk("gun");
+    let b = radio_chk("helmet");
+    let c = radio_chk("bodyshield");
+
+    document.getElementById("time").innerText = "킬까지 걸리는 시간: " + calculateTimeToKill(a, b, c, bodyParts).toFixed(3) + "초";
+    let shotsToKill = calculateShotsToKill(a, b, c, bodyParts);
+    // let shotsToKillString = "";
+    // shotsToKill.forEach(shot => {
+    //   shotsToKillString += shot.toFixed(1) + ", ";
+    // });
+    // document.getElementById("damage").innerText = "총알 당 데미지: " + shotsToKillString.slice(0, -2);
     document.getElementById("shots").innerText = "필요한 총알 수: " + shotsToKill.length;
+
+    updateDamageIndicators(shotsToKill);
 
     console.log("enter(): " + bodyParts);
 }
