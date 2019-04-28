@@ -85,16 +85,11 @@ function removeBodyPart() {
 
 function updateDamageIndicators(shotsToKill) {
   for (di of document.getElementsByClassName("damage_indicator")) {
-    di.innerText = "";
+    di.innerText = "0";
   }
 
-  let bodyPart = "";
-  let prevBodyPart = bodyParts[0];
-  let damageCount = 0;
-  let count = 1;
-  let i;
-
-  for (i=0; i<shotsToKill.length; i++) {
+  for (let i=0; i<shotsToKill.length; i++) {
+    let bodyPart;
     if (i >= bodyParts.length) {
       bodyPart = DEFAULT_BODY_PART;
     }
@@ -102,18 +97,9 @@ function updateDamageIndicators(shotsToKill) {
       bodyPart = bodyParts[i];
     }
 
-    if (bodyPart !== prevBodyPart) {
-      document.getElementById(BODY_PART_ID.get(prevBodyPart)).innerText =
-        count + ": " + shotsToKill[i-1].toFixed(1) + "×" + damageCount;
-      damageCount = 0;
-      count++;
-    }
-
-    damageCount++;
-    prevBodyPart = bodyPart;
+    let di = document.getElementById(BODY_PART_ID.get(bodyPart));
+    di.innerText = shotsToKill[i].toFixed(1) + "×" + (parseInt(di.innerText.slice(-1)) + 1);
   }
-  document.getElementById(BODY_PART_ID.get(prevBodyPart)).innerText =
-    count + ": " + shotsToKill[i-1].toFixed(1) + "×" + damageCount;
 }
 
 function enter() {
@@ -123,11 +109,11 @@ function enter() {
 
     document.getElementById("time").innerText = "킬까지 걸리는 시간: " + calculateTimeToKill(a, b, c, bodyParts).toFixed(3) + "초";
     let shotsToKill = calculateShotsToKill(a, b, c, bodyParts);
-    // let shotsToKillString = "";
-    // shotsToKill.forEach(shot => {
-    //   shotsToKillString += shot.toFixed(1) + ", ";
-    // });
-    // document.getElementById("damage").innerText = "총알 당 데미지: " + shotsToKillString.slice(0, -2);
+    let shotsToKillString = "";
+    shotsToKill.forEach(shot => {
+      shotsToKillString += shot.toFixed(1) + ", ";
+    });
+    document.getElementById("damage").innerText = "총알 당 데미지: " + shotsToKillString.slice(0, -2);
     document.getElementById("shots").innerText = "필요한 총알 수: " + shotsToKill.length;
 
     updateDamageIndicators(shotsToKill);
