@@ -100,6 +100,12 @@ function updateDamageIndicators(shotsToKill) {
     let di = document.getElementById(BODY_PART_ID.get(bodyPart));
     di.innerText = shotsToKill[i].toFixed(1) + "×" + (parseInt(di.innerText.slice(-1)) + 1);
   }
+
+  for (di of document.getElementsByClassName("damage_indicator")) {
+    if (di.innerText === "0") {
+      di.innerText = "";
+    }
+  }
 }
 
 function enter() {
