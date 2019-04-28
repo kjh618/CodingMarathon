@@ -120,3 +120,6 @@ function enter() {
 
     console.log("enter(): " + bodyParts);
 }
+function showHelp(){
+  window.open("views/help.html","a", "width=1000,height = 550,left = 100, top = 50");
+}
