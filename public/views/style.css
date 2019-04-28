@@ -64,8 +64,12 @@ ol {
 }
 
 #credits {
-  font-size: 1.3em;
+  font-size: 1.15em;
   font-family: 'Noto Sans KR', sans-serif;
   text-align: right;
   margin: 10px;
+}
+#help {
+  font-size: 1.6em;
+  font-family: 'Noto Sans KR', sans-serif;
 }
